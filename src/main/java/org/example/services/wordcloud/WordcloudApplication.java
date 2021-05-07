@@ -1,4 +1,4 @@
-package org.example.services;
+package org.example.services.wordcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
