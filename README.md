@@ -49,18 +49,64 @@ $ curl http://localhost:8080/actuator/health
 * Create docker image for Spring application
 * Implement example wordcloud REST service
 * Use AssertJ
+* Use SonarLint plugin
 
 ## References
 * https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
 * See: [HELP.md](HELP.md)
 
-## Start Spring Boot project
+## Starting Spring Boot project
 See: https://www.jetbrains.com/lp/intellij-frameworks/  
 Here https://start.spring.io/ is used.  
 ![](contrib/spring_initializr.png)
 See also: https://maven.apache.org/guides/mini/guide-naming-conventions.html#:~:text=artifactId%20is%20the%20name%20of,the%20jar%20as%20it's%20distributed.  
 Next: Unzip wordcloud.zip
 
+## RESTful machine interface
+```
+POST /wordcloud/from
+Consumes: application/json
+[
+  ["紅樓夢", 6],
+  ["賈寶玉", 3],
+  ["林黛玉", 3],
+  ["薛寶釵", 3],
+  ["王熙鳳", 3],
+  ["李紈", 3],
+  ["賈元春", 3],
+  ["賈迎春", 3],
+  ["賈探春", 3],
+  ["賈惜春", 3],
+  ["秦可卿", 3],
+  ["賈巧姐", 3],
+  ["史湘雲", 3],
+  ["妙玉", 3],
+  ["賈政", 2],
+  ["賈赦", 2],
+  ["賈璉", 2],
+  ["賈珍", 2],
+  ["賈環", 2],
+  ["賈母", 2],
+  ["王夫人", 2],
+  ["薛姨媽", 2],
+  ["尤氏", 2],
+  ["平兒", 2],
+  ["鴛鴦", 2],
+  ["襲人", 2],
+  ["晴雯", 2],
+  ["香菱", 2],
+  ["紫鵑", 2],
+  ["麝月", 2],
+  ["小紅", 2],
+  ["金釧", 2],
+  ["甄士隱", 2],
+  ["賈雨村", 2],
+  ["foo", 1],
+  ["bar", 1]
+]
+Produces: image/png
+```
+
 ## TODOs
-* Read [HELP.md](HELP.md)
+* Read references above
 * Enable and expose monitoring endpoints over http (especially actuator and prometheus metrics)
