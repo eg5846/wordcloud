@@ -17,8 +17,27 @@ $ ./mvnw clean test install
 ```
 
 ## Run app
+See: https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-running-your-application
+```
+# Variant A
+$ java -jar target/wordcloud-0.0.1-SNAPSHOT.jar
+
+# Or variant B
+$ ./mvnw spring-boot:run
+```
+
+## Use app
 ```
 TODO: Add this
+```
+
+## Monitor and manage app
+See: https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready
+```
+# Endpoint examples (there are many more, but not enabled and exposed by default over http)
+
+$ curl http://localhost:8080/actuator/health
+{"status":"UP"}
 ```
 
 ## Goals
@@ -44,3 +63,4 @@ Next: Unzip wordcloud.zip
 
 ## TODOs
 * Read [HELP.md](HELP.md)
+* Enable and expose monitoring endpoints over http (especially actuator and prometheus metrics)
