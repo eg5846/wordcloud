@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class WordcloudApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(WordcloudApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(WordcloudApplication.class, args);
+    }
 
 }
