@@ -54,6 +54,7 @@ $ curl http://localhost:8080/actuator/health
 ## References
 * https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
 * See: [HELP.md](HELP.md)
+* https://assertj.github.io/doc/
 
 ## Starting Spring Boot project
 See: https://www.jetbrains.com/lp/intellij-frameworks/  
@@ -110,3 +111,6 @@ Produces: image/png
 ## TODOs
 * Read references above
 * Enable and expose monitoring endpoints over http (especially actuator and prometheus metrics)
+* Add javadoc comments
+* What does @SpringBootTest?
+* How to use @NonNull? Use it from lombok or spring boot?
